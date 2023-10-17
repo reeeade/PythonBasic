@@ -11,7 +11,6 @@ for year in years:
         else:
             proc = 0.04
         calc_proc = new_sum * proc
-        # Схема амортизации для для просчета ежемесячного вноса средств для закрытия кредита до конца указанного срока
-        install = calc_proc / (1 - (1 + proc) ** (-months + month - 1))
-        new_sum -= install
+        install = sum_credit / months + calc_proc
+        new_sum -= sum_credit / months
         print(f'{month:^10}{install:^45.2f}{calc_proc:^19.2f}')
