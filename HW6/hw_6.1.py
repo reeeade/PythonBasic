@@ -3,7 +3,7 @@ years = [1, 5]
 for year in years:
     new_sum = sum_credit
     print(f'{"-" * 20}Помесячный план выплат на {year}год/лет{"-" * 20}')
-    print(f'{"Месяц":^10}{"Сумма выплаты":^45}{"Насчитано процентов":^19}')
+    print(f'{"Месяц":^10}{"Сумма взноса":^45}{"Насчитано процентов":^19}')
     months = year * 12
     for month in range(1, months + 1):
         if month <= 24:
