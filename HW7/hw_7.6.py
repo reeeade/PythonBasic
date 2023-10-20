@@ -34,5 +34,5 @@ for k, v in new_dict.items():
         more = k
     if less is None or v < new_dict[less]:
         less = k
-print(f"Наиболее встречаемое слово '{more}' : {new_dict[more]} раз")
-print(f"Наименее встречаемое слово '{less}' : {new_dict[less]} раз")
+print(f"Наиболее встречаемое слово '{more}': {new_dict[more]} раз")
+print(f"Наименее встречаемое слово '{less}': {new_dict[less]} раз")
