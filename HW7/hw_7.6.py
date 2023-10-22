@@ -28,11 +28,17 @@ new_dict = {}
 for i in new_txt_list:
     new_dict[i] = new_dict.get(i, 0) + 1
 
-more, less = None, None
-for k, v in new_dict.items():
-    if more is None or v > new_dict[more]:
-        more = k
-    if less is None or v < new_dict[less]:
-        less = k
-print(f"Наиболее встречаемое слово '{more}': {new_dict[more]} раз")
-print(f"Наименее встречаемое слово '{less}': {new_dict[less]} раз")
+more_value = max(new_dict.values())
+less_value = min(new_dict.values())
+more_list = []
+less_list = []
+for i in new_dict:
+    if new_dict[i] == more_value:
+        more_list.append(i)
+    if new_dict[i] == less_value:
+        less_list.append(i)
+
+more = ', '.join(more_list)
+less = ', '.join(less_list)
+print(f'Реже ({less_value} раз/а) встречаются слова/о: {less}')
+print(f'Чаще ({more_value} раз/а) встречаются слова/о: {more}')
