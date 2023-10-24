@@ -1,6 +1,6 @@
 from random import randint
 
-int_elements = [randint(1, 500) for _ in range(26)]
+int_elements = [randint(1, 500) for _ in range(25)]
 print(int_elements)
 sqr_elements = [i ** 2 for i in int_elements]
 print(sqr_elements)
