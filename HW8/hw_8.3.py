@@ -4,4 +4,4 @@ hash_types = (int, float, str, tuple, frozenset, bool)
 for i in test:
     if type(i) in hash_types:
         new_set.add(i)
-print("Итоговое множество, состоящее только из хешируемых данных:", new_set, sep='\n')
+print('Итоговое множество, состоящее только из хешируемых данных:', new_set, sep='\n')
