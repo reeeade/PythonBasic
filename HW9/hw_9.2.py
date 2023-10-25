@@ -7,5 +7,5 @@ for i in matrix:
     print(i)
 d_sum = sum(matrix[i][i] for i in range(matrix_size))
 print("Сумма чисел по диагонали:", d_sum)
-last_sum = sum(matrix[i][matrix_size - 1] for i in range(matrix_size))
+last_sum = sum(matrix[i][-1] for i in range(matrix_size))
 print("Сумма чисел последнего столбика:", last_sum)
