@@ -1,10 +1,10 @@
 def is_equivalent_sum2num(_list, num):
     """
-    The function checks if there are 2 numbers in _list, the sum of which is equivalent to num.
+    Функция проверяет, есть ли в _list 2 числа, сумма которых эквивалентна num.
 
-    :param _list: input list, which we check. Class list
-    :param num: input number - the sum of the two numbers in the _list. Class int
-    :return: True, if there are two numbers from the list whose sum is equivalent to target_sum, otherwise False
+    :param _list: Список чисел, который мы проверяем. Тип list
+    :param num: Входное число - сумма двух чисел в _list. Тип int
+    :return: True, если есть два числа из списка, сумма которых эквивалентна num, в противном случае False
     """
     checks_items = []
     for item in _list:
