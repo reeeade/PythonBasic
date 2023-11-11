@@ -26,12 +26,15 @@ class ExtTriangle(Triangle, TriangleChecker):
 print("'''Можна побудувати'''".center(41, '-'))
 triangle = ExtTriangle(3, 4, 5)
 print(triangle.is_triangle().center(41))
+
 print("'''З негативними числами'''".center(41, '-'))
 triangle = ExtTriangle(-2, 4, 5)
 print(triangle.is_triangle().center(41))
+
 print("'''Не тільки числа'''".center(41, '-'))
 triangle = ExtTriangle("4", 4, 2)
 print(triangle.is_triangle().center(41))
+
 print("'''Трикутник не зробити'''".center(41, '-'))
 triangle = ExtTriangle(0, 4, 2)
 print(triangle.is_triangle().center(41))
