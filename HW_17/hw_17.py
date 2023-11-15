@@ -1,4 +1,12 @@
 def sum_or_conc(a, b):
+    """
+    Ф-я для нахождения суммы двух чисел. Если один и аргументов не является числом,
+    то выполняется конкатенация
+
+    :param a: Первое число/текст
+    :param b: Второе число/текст
+    :return: Сумма чисел или новый текст
+    """
     try:
         _sum = a + b
         assert not (isinstance(a, str) and isinstance(b, str))
@@ -15,6 +23,7 @@ def sum_or_conc(a, b):
         print("*" * 50)
 
 
-sum_or_conc(3, 4)
-sum_or_conc('Hello', 555)
-sum_or_conc("Hello", "user")
+if __name__ == "__main__":
+    sum_or_conc(3, 4)
+    sum_or_conc('Hello', 555)
+    sum_or_conc("Hello", "user")
