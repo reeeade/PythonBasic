@@ -2,6 +2,12 @@ from colour_for_lesson.mcolour import styled, color_text, color_back
 
 
 def style_all(txt: str):
+    """
+    Ф-я применяет форматирование ко всему тексту (стиль, цвет фона и текста)
+
+    :param txt: Текст для форматирования
+    :return: Отформатированный текст
+    """
     new_txt = []
     for line in txt.splitlines():
         colour = color_text(line, 'black')
@@ -12,6 +18,13 @@ def style_all(txt: str):
 
 
 def style_someone(txt: str, *args):
+    """
+    Ф-я выбирает ключевые слова, переданные в качестве аргументов через запятую и делает их жирными
+
+    :param txt:Текст в котором выбираются ключевые слова
+    :param args: Ключевые слова для выделения
+    :return: Текст с выделенными ключевыми словами
+    """
     new_txt = txt
     for word in args:
         new_txt = new_txt.replace(word, styled(word, "1m"))
